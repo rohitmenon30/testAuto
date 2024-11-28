@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from Git repository
-                git branch: 'main', url: 'https://github.com/rohitmenon30/testAuto.git'
+                git branch: 'main', url: 'https://github.com/rohitmenon30/testAuto.git', credentialsId: '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'
             }
         }
 
